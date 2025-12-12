@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Booking - SmileCare Dental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="logo-icon">✨</div>
+                <span>SmileCare</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="booking.html">Booking</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <div class="phone-icon">📞</div>
+                <a href="patient-portal.html" class="login-btn">Patient Portal</a>
+                <a href="booking.html" class="book-btn">📅 Book Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-header">
+                <h2 class="booking-title">📅 Smart Appointment Booking</h2>
+                <p class="booking-subtitle">Book your appointment in just a few clicks</p>
+            </div>
+
+            <div class="booking-features">
+                <div class="feature">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI-Powered Suggestions</h3>
+                    <p>Best times based on crowd levels & your history</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>One-Tap Booking</h3>
+                    <p>Quick appointments in under 30 seconds</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📆</div>
+                    <h3>Calendar Sync</h3>
+                    <p>Auto-sync with Google & Apple Calendar</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔔</div>
+                    <h3>Smart Reminders</h3>
+                    <p>WhatsApp, SMS & Email notifications</p>
+                </div>
+            </div>
+
+            <div class="booking-form-section">
+                <div class="booking-steps">
+                    <h3>Select Your Doctor</h3>
+                    <div class="doctors-list">
+                        <div class="doctor-option" onclick="selectDoctor(this)">
+                            <div class="doctor-icon">👨‍⚕️</div>
+                            <p><strong>Dr. Sarah Johnson</strong></p>
+                            <p>General Dentistry</p>
+                        </div>
+                        <div class="doctor-option" onclick="selectDoctor(this)">
+                            <div class="doctor-icon">👩‍⚕️</div>
+                            <p><strong>Dr. Michael Chen</strong></p>
+                            <p>Orthodontics</p>
+                        </div>
+                        <div class="doctor-option" onclick="selectDoctor(this)">
+                            <div class="doctor-icon">👩‍⚕️</div>
+                            <p><strong>Dr. Emily Brown</strong></p>
+                            <p>Cosmetic Dentistry</p>
+                        </div>
+                        <div class="doctor-option" onclick="selectDoctor(this)">
+                            <div class="doctor-icon">👨‍⚕️</div>
+                            <p><strong>Dr. James Wilson</strong></p>
+                            <p>Pediatric Dentistry</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-steps">
+                    <h3>Available Times</h3>
+                    <p class="crowd-hint">💡 AI suggests low crowd times</p>
+                    <div class="time-slots">
+                        <button class="time-slot low-crowd">09:00 AM</button>
+                        <button class="time-slot low-crowd">10:00 AM</button>
+                        <button class="time-slot medium-crowd">11:00 AM</button>
+                        <button class="time-slot medium-crowd">12:00 PM</button>
+                        <button class="time-slot medium-crowd">02:00 PM</button>
+                        <button class="time-slot low-crowd">03:00 PM</button>
+                        <button class="time-slot low-crowd">04:00 PM</button>
+                        <button class="time-slot medium-crowd">05:00 PM</button>
+                    </div>
+                </div>
+
+                <div class="booking-summary">
+                    <h3>Booking Summary</h3>
+                    <div class="summary-card">
+                        <p><strong>Date:</strong> <span id="summaryDate">12/12/2025</span></p>
+                        <p><strong>Time:</strong> <span id="summaryTime">Not selected</span></p>
+                        <p><strong>Doctor:</strong> <span id="summaryDoctor">Not selected</span></p>
+                    </div>
+
+                    <div class="reminder-options">
+                        <h4>Get Reminders via:</h4>
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked>
+                            <span>📱 WhatsApp</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" checked>
+                            <span>💬 SMS</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span>📧 Email</span>
+                        </label>
+                    </div>
+
+                    <button class="confirm-appointment-btn" onclick="confirmBooking()">✓ Confirm Appointment</button>
+                    <p class="cancel-note">Auto-syncs with your calendar • Free cancellation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SmileCare Dental Clinic. All rights reserved. | Privacy Policy | Terms of Service</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
